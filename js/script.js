@@ -5,19 +5,17 @@
 
 let word = prompt('Inserisci una parola e verifica se questa è palindroma o meno');
 let output = document.querySelector('.output');
-
 let reverseWord = checkPalindrome(word);
 
-if(word.toLowerCase() == reverseWord.toLowerCase()){
-    output.innerHTML = `${word} è una parola palindroma`; 
-
-} else {
-    output.innerHTML = `${word} non è una parola palindroma`; 
-}
-  
 function checkPalindrome(string){
-  let stringReverse = string.split('').reverse().join('');  
-  return stringReverse;
+    
+    let reverseWord = string.split('').reverse().join(''); 
+
+    if(word.toLowerCase() == reverseWord.toLowerCase()){
+        output.innerHTML = `${word} è una parola palindroma.`; 
+    } else {
+        output.innerHTML = `${word} non è una parola palindroma.`; 
+    }
 }
 
 
