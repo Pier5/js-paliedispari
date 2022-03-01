@@ -48,7 +48,7 @@ if (question == 'pari' && sum(totalSum) == true) {
     outputFive.innerHTML = 'Hai perso!!';
 } else if (question == 'dispari' && sum(totalSum) == false) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else {
+} else if (question == 'pari' && sum(totalSum) == false){
     outputFive.innerHTML = 'Hai perso!!';
 }
 
