@@ -5,23 +5,27 @@
 }
 
 body {
+    height: 90vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    background-color: #84d7f9;
-    text-align: center;
+
+h1,
+.inside,
+.inside-two {
+    margin: 5px;
 }
 
 .container {
     background-color: #84d7f9;
+    height: 50%;
     margin-bottom: 10px;
     display: flex;
 }
 
 .image {
     width: 500px;
-    height: 400px;
+    height: 100%;
 }
 
 .img-clippy {
@@ -30,14 +34,25 @@ h1 {
 }
 
 .output {
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+}
+.inside-two {
+    margin-top: 20px;
+}
+.container-two {
+    background-color: antiquewhite;
+    height: 50%;
 }
 
-.container-two {
-    background-color: white;
+.output-one,
+.output-two,
+.output-three,
+.output-four,
+.output-five {
+    margin: 5px 0;
 }
 
 
