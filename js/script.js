@@ -42,13 +42,13 @@ outputTwo.innerHTML = `Il tuo numero: ${num}`;
 outputThree.innerHTML = `Numero Cpu: ${numCpu}`; 
 outputFour.innerHTML = `Totale: ${totalSum}`;
 
-if (question == 'pari' && sum(totalSum) == true) {
+if (question == 'pari' && boole(totalSum) == true) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else if (question == 'dispari' && sum(totalSum) == true) {
+} else if (question == 'dispari' && boole(totalSum) == true) {
     outputFive.innerHTML = 'Hai perso!!';
-} else if (question == 'dispari' && sum(totalSum) == false) {
+} else if (question == 'dispari' && boole(totalSum) == false) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else if (question == 'pari' && sum(totalSum) == false){
+} else if (question == 'pari' && boole(totalSum) == false){
     outputFive.innerHTML = 'Hai perso!!';
 }
 
@@ -56,7 +56,7 @@ function random(max) {
     return Math.floor(Math.random() * (max) ) + 1;
 }
 
-function sum(result) {
+function boole(result) {
     if (result % 2 == 0) {
         return true;
     } else {
