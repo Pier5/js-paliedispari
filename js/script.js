@@ -31,6 +31,7 @@ function checkPalindrome(string){
 
 let question = prompt('Scegli: Pari o Dispari?').toLowerCase();
 let num = parseInt(prompt('Inserisci un numero da 1 a 5'));
+let outputOne = document.querySelector('.output-one');
 let outputTwo = document.querySelector('.output-two');
 let outputThree = document.querySelector('.output-three');
 let outputFour = document.querySelector('.output-four');
@@ -38,6 +39,7 @@ let outputFive = document.querySelector('.output-five');
 let numCpu = random(5);
 let totalSum = num + numCpu;
 
+outputOne.innerHTML = `Hai scelto: ${question}`
 outputTwo.innerHTML = `Il tuo numero: ${num}`;
 outputThree.innerHTML = `Numero Cpu: ${numCpu}`; 
 outputFour.innerHTML = `Totale: ${totalSum}`;
