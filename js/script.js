@@ -36,16 +36,17 @@ let outputThree = document.querySelector('.output-three');
 let outputFour = document.querySelector('.output-four');
 let outputFive = document.querySelector('.output-five');
 let numCpu = random(5);
+let totalSum = num + numCpu;
 
 outputTwo.innerHTML = `Il tuo numero: ${num}`;
 outputThree.innerHTML = `Numero Cpu: ${numCpu}`; 
-outputFour.innerHTML = `Totale: ${sum()}`;
+outputFour.innerHTML = `Totale: ${totalSum}`;
 
-if (question == 'pari' && sum() % 2 == 0) {
+if (question == 'pari' && totalSum == true) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else if (question == 'dispari' && sum() % 2 == 0) {
+} else if (question == 'dispari' && totalSum == true) {
     outputFive.innerHTML = 'Hai perso!!';
-} else if (question == 'dispari' && sum() % 2 ==1) {
+} else if (question == 'dispari' && totalSum == false) {
     outputFive.innerHTML = 'Hai vinto!!';
 } else {
     outputFive.innerHTML = 'Hai perso!!';
@@ -56,7 +57,11 @@ function random(max) {
 }
 
 function sum() {
-    return num + numCpu;
+    if (sum % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
