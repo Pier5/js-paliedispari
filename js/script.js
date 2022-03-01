@@ -9,10 +9,10 @@ let output = document.querySelector('.output');
 let reverseWord = checkPalindrome(word);
 
 if(word.toLowerCase() == reverseWord.toLowerCase()){
-    output.innerHTML = "Questa è una parola palindroma!"; 
+    output.innerHTML = `${word} è una parola palindroma`; 
 
 } else {
-    output.innerHTML = "Questa non è una parola palindroma!"; 
+    output.innerHTML = `${word} non è una parola palindroma`; 
 }
   
 function checkPalindrome(string){
@@ -63,20 +63,3 @@ function isEven(result) {
         return false;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
