@@ -29,7 +29,7 @@ function checkPalindrome(string){
 // Dichiariamo chi ha vinto.
 
 
-let question = prompt('Scegli: Pari o Dispari?').toLowerCase();
+let question = prompt('Scegli: Pari o Dispari?');
 let num = parseInt(prompt('Inserisci un numero da 1 a 5'));
 let outputOne = document.querySelector('.output-one');
 let outputTwo = document.querySelector('.output-two');
@@ -44,13 +44,13 @@ outputTwo.innerHTML = `Il tuo numero: ${num}`;
 outputThree.innerHTML = `Numero Cpu: ${numCpu}`; 
 outputFour.innerHTML = `Totale: ${totalSum}`;
 
-if (question == 'pari' && isEven(totalSum) == true) {
+if (question.toLowerCase() == 'pari' && isEven(totalSum) == true) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else if (question == 'dispari' && isEven(totalSum) == true) {
+} else if (question.toLowerCase() == 'dispari' && isEven(totalSum) == true) {
     outputFive.innerHTML = 'Hai perso!!';
-} else if (question == 'dispari' && isEven(totalSum) == false) {
+} else if (question.toLowerCase() == 'dispari' && isEven(totalSum) == false) {
     outputFive.innerHTML = 'Hai vinto!!';
-} else if (question == 'pari' && isEven(totalSum) == false){
+} else if (question.toLowerCase() == 'pari' && isEven(totalSum) == false){
     outputFive.innerHTML = 'Hai perso!!';
 }
 
